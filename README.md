@@ -1,4 +1,81 @@
-## API Documentation
+# Overview
+
+This project is a Node.js application that includes user authentication, email sending functionality, and a dashboard for user and project management. It uses MongoDB as the database and Nodemailer for email functionality.
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+### 2. Install Dependencies
+
+Install the required Node.js packages using npm:
+
+```bash
+npm install
+```
+
+### 3. Create Environment Configuration File
+
+Create a `.env` file in the root directory of the project. This file will contain all the necessary environment variables. Use the following template and fill in the required values:
+
+```dotenv
+# MongoDB URI
+MONGO_URI=mongodb://<username>:<password>@<host>:<port>/<database>
+
+# JWT Secret for authentication
+JWT_SECRET=your_jwt_secret
+
+# Email Configuration (Gmail)
+EMAIL=your_email@gmail.com
+PASSWORD=your_email_password
+
+# (Optional) PORT for the server to listen on
+PORT=5000
+```
+
+**Note:** For Gmail, you may need to enable "Less secure app access" or use an App Password if you have 2-Step Verification enabled. More details can be found [here](https://support.google.com/accounts/answer/6010255).
+
+### 4. Set Up MongoDB
+
+Ensure MongoDB is running on your local machine or use a cloud-hosted MongoDB service. Update the `MONGO_URI` in the `.env` file with your MongoDB connection string.
+
+### 5. Running the Application
+
+Start the application by running:
+
+```bash
+npm start
+```
+
+The server will start and listen on the port specified in the `.env` file (default is `5000`).
+
+Make sure you have created the necessary mock data or set up the test environment as required.
+
+### 6. Email Functionality
+
+Ensure that the email configuration in the `.env` file is correct. If you are using Gmail, make sure to allow less secure apps or use an App Password. 
+
+### 7. Error Handling
+
+Ensure proper error handling is implemented in the application. Errors will be logged to the console and sent in the response if any issues occur.
+
+## Troubleshooting
+
+- **Issue**: Cannot connect to MongoDB.
+  **Solution**: Check your `MONGO_URI` and ensure MongoDB is running.
+
+- **Issue**: Email sending fails.
+  **Solution**: Verify email configuration and credentials. For Gmail, check the "Less secure app access" settings or use an App Password.
+
+---
+# API Documentation
 
 ### Base URL
 
@@ -266,3 +343,7 @@ http://localhost:5000/api
 - **Description**: Users can view a dashboard that includes statistics such as the number of projects and emails associated with their account.
 
 ---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
