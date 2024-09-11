@@ -195,7 +195,8 @@ http://localhost:5000/api
   ```json
   {
     "name": "Updated Name",
-    "email": "updated@example.com"
+    "email": "updated@example.com",
+    "password": "newpassword123"
   }
   ```
 - **Response**:
