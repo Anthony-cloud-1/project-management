@@ -257,6 +257,8 @@ http://localhost:5000/api
   {
     "name": "Project Name",
     "description": "Project Description"
+    "status": "in progress", // Optional parameter, defaults to 'not started'
+    "imageUrl": "http://example.com/image.jpg" // Optional: URL to an image associated with the project
   }
   ```
 - **Response**:
@@ -275,6 +277,8 @@ http://localhost:5000/api
   {
     "name": "Updated Project Name",
     "description": "Updated Description"
+    "status": "in progress", // Optional parameter, defaults to 'not started'
+    "imageUrl": "http://example.com/image.jpg" // Optional: URL to an image associated with the project
   }
   ```
 - **Response**:
