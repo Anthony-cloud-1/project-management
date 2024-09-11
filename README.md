@@ -64,7 +64,7 @@ Ensure that the email configuration in the `.env` file is correct. If you are us
 
 ### 7. Error Handling
 
-Ensure proper error handling is implemented in the application. Errors will be logged to the console and sent in the response if any issues occur.
+Errors will be logged to the console and sent in the response if any issues occur.
 
 ## Troubleshooting
 
