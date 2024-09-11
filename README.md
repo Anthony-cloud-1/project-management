@@ -346,4 +346,4 @@ http://localhost:5000/api
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [`LICENSE`](https://github.com/Anthony-cloud-1/project-management/blob/main/LICENSE.md) file for details.
